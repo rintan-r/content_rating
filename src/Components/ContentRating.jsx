@@ -9,18 +9,19 @@ class ContentRating extends Component {
         likes : 0,
         dislikes : 0,
         totalRatings : 0,
-        handleLike:() => {
+
+        handleLike: () => {
             this.setState((prevState) => ({
-                likes: prevState.likes + 1,
-                totalRatings: prevState.totalRatings + 1
+              likes: prevState.likes + 1,
+              totalRatings: prevState.totalRatings + 1
             }));
-        },
-        handleDislike:() => {
+          },
+          handleDislike: () => {
             this.setState((prevState) => ({
-                dislikes: prevState.dislikes + 1,
-                totalRatings: prevState.totalRatings + 1
+              dislikes: prevState.dislikes + 1,
+              totalRatings: prevState.totalRatings + 1
             }));
-        },
+          }
     }
   }
   render() {
